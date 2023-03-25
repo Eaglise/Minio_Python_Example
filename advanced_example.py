@@ -3,7 +3,8 @@ from minio.error import S3Error
 from config import Config
 import io
 
-
+# здесь Minio выступает в качестве хранилища для сервиса заметок (notes)
+# каждому пользователю присваивается свой бакет, а заметки хранятся в виде отдельных файлов
 class MinioClass:
     def __init__(self):
         try:
