@@ -64,7 +64,7 @@ client.fget_object(bucket_name='your_bucket_name',      # необходимо �
                    
 # пример записи строковых данных в хранилище через поток
 import io
-str_io_object = io.StringIO('some data in string format') # перевод из сроки в поток
+str_io_object = io.StringIO('some data in string format') # перевод из строки в поток
 data_stream = str_io_object.read().encode('utf8')       # считывание потока
 client.put_object(bucket_name='bucketname',
                   object_name='filename',
